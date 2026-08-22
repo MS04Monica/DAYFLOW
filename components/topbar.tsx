@@ -46,8 +46,8 @@ export default function Topbar({
 
           <div className="md:hidden">
             <p className="text-xs font-medium text-slate-400">
-              Employee Portal
-            </p>
+  Dayflow Portal
+</p>
             <p className="text-sm font-bold text-slate-950">
               Dayflow
             </p>
