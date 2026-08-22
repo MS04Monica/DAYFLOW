@@ -1,5 +1,7 @@
 import { redirect } from "next/navigation";
+
 import { createClient } from "@/lib/supabase/server";
+
 import EmployeeOverview from "./components/employee-overview";
 
 export default async function EmployeeDashboard() {
@@ -23,17 +25,5 @@ export default async function EmployeeDashboard() {
     redirect("/login");
   }
 
-  return (
-  <main className="min-h-screen p-8">
-    <h1 className="text-3xl font-bold">
-      Welcome, {profile.name}
-    </h1>
-
-    <p className="mt-2 text-slate-500">
-      Employee Dashboard
-    </p>
-
-    <EmployeeOverview />
-  </main>
-);
+  return <EmployeeOverview />;
 }
