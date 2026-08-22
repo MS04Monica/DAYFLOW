@@ -172,7 +172,8 @@ export async function handleAttendance(
       working_hours: workingHours,
     })
     .eq("id", todayAttendance.id)
-    .eq("employee_id", user.id)
+.eq("employee_id", user.id)
+.is("check_out", null)
     .select("check_in, check_out, working_hours, status")
     .single();
 
